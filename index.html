@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tejaswini Dwivedi | Counseling & Mental Wellness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div><strong>Tejaswini Dwivedi</strong></div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Sessions</a></li>
+            <li><a href="#issues">Concerns</a></li>
+            <li><a href="#query">Reach Out</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1>Helping You Heal and Grow</h1>
+        <p>Licensed counseling to guide you toward calm, clarity, and confidence — wherever you are on your journey.</p>
+        <a href="#query" class="btn">Book a Session</a>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" data-animate>
+        <h2 class="section-title">About Me</h2>
+        <div class="flex">
+            <div class="about-img">
+                <div class="profile-wrapper">
+                    <img src="tejaswini.jpg" alt="Tejaswini Dwivedi" />
+                    <h3>Tejaswini Dwivedi</h3>
+                    <p>Clinical Psychologist</p>
+                </div>
+            </div>
+            <div class="about-text">
+                <p>
+                    I’m <strong>Tejaswini Dwivedi</strong>, a clinical psychologist with 8+ years of experience helping
+                    people manage anxiety, trauma, and relationship challenges. My sessions combine evidence-based
+                    techniques with empathetic listening to create a safe, supportive space for growth.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" data-animate>
+        <h2 class="section-title">Ways We Can Meet</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>In‑Person Counseling</h3>
+                <p>One‑on‑one sessions in a calm, private setting.</p>
+            </div>
+            <div class="card">
+                <h3>Secure Video Calls</h3>
+                <p>Connect virtually from anywhere at your comfort.</p>
+            </div>
+            <div class="card">
+                <h3>Workshops & Retreats</h3>
+                <p>Group therapy, wellness workshops, and corporate programs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ISSUES -->
+    <section id="issues" data-animate>
+        <h2 class="section-title">How I Can Help</h2>
+        <div class="grid">
+            <span class="issue">Anxiety</span>
+            <span class="issue">Depression</span>
+            <span class="issue">Relationship Issues</span>
+            <span class="issue">Low Self‑Esteem</span>
+            <span class="issue">Work Stress</span>
+            <span class="issue">Overthinking</span>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <!-- <section id="testimonials" data-animate>
+      <h2 class="section-title">Client Reflections</h2>
+      <div class="testimonial">
+        <blockquote>
+          "Dr. Aisha created a space where I finally felt heard. Our sessions changed how I see myself."
+        </blockquote>
+        <p>– Riya S., Client</p>
+      </div>
+    </section> -->
+
+    <!-- TIPS -->
+    <!-- <section id="tips" data-animate>
+      <h2 class="section-title">Wellness Tips</h2>
+      <ul class="tips-list">
+        <li>🌱 Journaling 5 mins a day can improve mood regulation.</li>
+        <li>💤 Quality sleep is a powerful tool in healing trauma.</li>
+        <li>🤝 You don’t have to “have it worse” to deserve help.</li>
+      </ul>
+    </section> -->
+
+    <!-- QUERY FORM -->
+    <section id="query" data-animate>
+        <h2 class="section-title">Reach Out</h2>
+        <div class="btn-center">
+            <a href="https://calendly.com/muditawasthi" target="_blank" class="schedule-btn">Schedule a Session</a>
+        </div>
+
+        <form id="queryForm" class="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Full Name *" required />
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email *" required />
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="Phone Number" />
+            </div>
+            <div class="form-group">
+                <input type="number" name="age" placeholder="Age" min="5" max="120" />
+            </div>
+            <div class="form-group">
+                <select name="gender" required>
+                    <option value="">Gender</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="nonbinary">Non-binary</option>
+                    <option value="prefer-not">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" name="occupation" placeholder="Occupation" />
+            </div>
+            <div class="form-group">
+                <select name="session_type" required>
+                    <option value="">Preferred Session Type</option>
+                    <option value="inperson">In-Person</option>
+                    <option value="online">Online</option>
+                    <option value="hybrid">Hybrid</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select name="concerns" required>
+                    <option value="">Select Your Primary Concern</option>
+                    <option value="anxiety">Anxiety</option>
+                    <option value="depression">Depression</option>
+                    <option value="relationship">Relationship Issues</option>
+                    <option value="stress">Work Stress</option>
+                    <option value="selfesteem">Low Self-Esteem</option>
+                    <option value="grief">Grief or Loss</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" name="duration" placeholder="How long have you felt this way?" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="availability" placeholder="Preferred Days/Time" />
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Tell me a little about what you're facing…"
+                    required></textarea>
+            </div>
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <!-- ★★★ 2.  SUCCESS BANNER ★★★ -->
+        <div id="successMessage" class="success-message">
+            Thank you for reaching out – I’ll be in touch soon!
+        </div>
+        <div class="contact-details">
+            <div>Email: aisha.sharma@example.com</div>
+            <div>Phone: +91‑9876543210</div>
+            <div>Instagram: @heal_withT</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; <span id="year"></span>Tejaswini Dwivedi All rights reserved.
+    </footer>
+
+    <!-- FLOATING BUTTON -->
+    <a href="#query" class="floating-cta">Book a Session</a>
+
+    <!-- SCRIPT -->
+    <!-- <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      document.getElementById("queryForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Thank you for reaching out – I’ll be in touch soon!");
+        e.target.reset();
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll("[data-animate]").forEach((el) => observer.observe(el));
+
+      function toggleMenu() {
+        document.getElementById("nav-links").classList.toggle("show");
+      }
+    </script> -->
+
+    <!-- 1.  EmailJS CDN (always above your own script) -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- 2.  Your custom JS -->
+    <script>
+        /* Set the copyright year */
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        /* Intersection‑observer animation (unchanged) */
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.15 }
+        );
+        document
+            .querySelectorAll("[data-animate]")
+            .forEach((el) => observer.observe(el));
+
+        /* Mobile nav toggle */
+        function toggleMenu() {
+            document.getElementById("nav-links").classList.toggle("show");
+        }
+
+        /* ==========  EMAILJS INTEGRATION  ========== */
+        emailjs.init("w3d2BCYZDCpQkTtvS"); // Your public key
+
+        document
+            .getElementById("queryForm")
+            .addEventListener("submit", async function (e) {
+                e.preventDefault();
+
+                try {
+                    await emailjs.sendForm(
+                        "service_7liqenk", // service ID
+                        "template_5c4gaji", // template ID
+                        this
+                    );
+
+                    // show banner
+                    const banner = document.getElementById("successMessage");
+                    banner.style.display = "block";
+                    banner.style.opacity = "0";
+                    setTimeout(() => (banner.style.opacity = "1"), 60);
+
+                    // reset form
+                    this.reset();
+
+                    // hide banner after 4 s
+                    setTimeout(() => {
+                        banner.style.opacity = "0";
+                        setTimeout(() => (banner.style.display = "none"), 500);
+                    }, 4000);
+                } catch (err) {
+                    alert(
+                        "Oops — something went wrong. Please try again or email me directly."
+                    );
+                    console.error(err);
+                }
+            });
+    </script>
+</body>
+
+</html>
